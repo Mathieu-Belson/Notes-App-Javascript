@@ -54,5 +54,14 @@
     padding: 20px;
     margin: 20px 0;
     outline: none;
-    border-radius: 5px;
+    border-radius: 8px;
+}
+
+.input-box img {
+    width: 25px; /* used to change the size of the icon */
+    position: absolute;
+    bottom: 15px; /* used to change the position of the icon */
+    right: 15px; /* used to change the position of the icon */
+    cursor: pointer;
+
 }
