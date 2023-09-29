@@ -2,10 +2,22 @@ const notesContainer = document.querySelector('.notes-container');
 const createBtn = document.querySelector('.btn');
 let notes = document.querySelectorAll('.input-box');
 
+
+function updateStorage() { /* the notes will be saved in the browser */
+    localStorage.selectItem("notes", notesContainer.innerHTML);
+}
+
 createBtn.addEventListener('click', () => {
     let inputBox = document.createElement('p');
     let img = document.createElement('img');
     inputBox.className = 'input-box';
+    inputBox.setAttribute('contenteditable', 'true'); /* setAttribute() allows user to edit inputBox */
     img.src = 'images/delete.png';
-    notesContainer.appendChild(inputBox).appendChild(img); /* appendChild() method adds a node to the end of the list of children of a specified parent node. */
+    notesContainer.appendChild(inputBox).appendChild(img); /* appendChild() displays inputBox & img */
+});
+
+notesContainer.addEventListener('click', function(e) {
+    if(e.target.tagName === 'IMG') {
+       e.target.parentElement.remove(); /* remove() removes inputBox & img */
+    }
 });
