@@ -8,7 +8,7 @@
 .container {
     width: 100%;
     min-height: 100vh; /* we use vh here because we want the container to be 100% of the viewport height even if the content is not enough to fill the viewport height */
-    background: linear-gradient(135deg, #f4bfdf, #abccfc);
+    background: linear-gradient(135deg, #f9b2dd, #5594f2);
     color: #fff;
     padding-top: 4%;    
     padding-left: 10%;
@@ -33,12 +33,12 @@
 .container button {
     display: flex;
     align-items: center;
-    background: linear-gradient(#206fa0, #9bc2f9);
+    background: #5594f2;
     color: #fff;
     font-size: 16px;
     outline: 0;
     border: 0;
-    border-radius: 40px;
+    border-radius: 8px;
     padding: 15px 25px;
     margin: 30px 0 20px;    
     cursor: pointer;
@@ -58,7 +58,7 @@
 }
 
 .input-box img {
-    width: 25px; /* used to change the size of the icon */
+    width: 30px; /* used to change the size of the icon */
     position: absolute;
     bottom: 15px; /* used to change the position of the icon */
     right: 15px; /* used to change the position of the icon */
